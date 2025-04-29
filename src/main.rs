@@ -23,7 +23,7 @@ struct Wine {
     prl: f32,
 }
 
-//average function, takes in a wine struct and a feature name， return the average value of that feature's value of that type of wine
+//average function, takes in a wine struct and a feature name, return the average value of that feature's value of that type of wine
 fn mean_feature<F>(wines: &[Wine], feature_extractor: F) -> f32
 where
     F: Fn(&Wine) -> f32,
